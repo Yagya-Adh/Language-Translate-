@@ -45,7 +45,9 @@ const LanguageApp = () => {
         From ({from}) :
         <select onChange={(e) => setFrom(e.target.value)} className="p-2 m-1">
           {options.map((opt) => (
-            <option key={opt.code} value={opt.code}>{opt.name}</option>
+            <option key={opt.code} value={opt.code}>
+              {opt.name}
+            </option>
           ))}
         </select>
         To ({to}):
